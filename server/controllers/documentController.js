@@ -1,11 +1,12 @@
-const Document = require('../models/document.js'); // Import the Document model
-const { Router } = require('express');
-const router = Router();
+// Import necessary modules and setup Express Router
+const Document = require('../models/document'); // Import the Document model
+const express = require('express');
+const router = express.Router();
 
 // Route to upload a new document
 router.post('/upload', async (req, res) => {
   try {
-    const { name, url } = req.body; // Assuming you're sending the name and URL from the frontend
+    const { name, url } = req.body;
 
     // Create a new document instance
     const newDocument = new Document({
@@ -28,7 +29,7 @@ router.post('/upload', async (req, res) => {
 router.get('/list', async (req, res) => {
   try {
     // Fetch all documents from the database
-    const documents = await Document.find(); // Use Document.find() instead of just find()
+    const documents = await Document.find();
 
     res.status(200).json(documents);
   } catch (error) {
