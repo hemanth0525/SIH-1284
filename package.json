@@ -1,0 +1,27 @@
+{
+  "name": "sih-1284",
+  "version": "1.0.0",
+  "description": "SIH-1284",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemanth0525/SIH-1284.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hemanth0525/SIH-1284/issues"
+  },
+  "homepage": "https://github.com/hemanth0525/SIH-1284#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.5.2"
+  }
+}
